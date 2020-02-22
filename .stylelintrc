@@ -1,0 +1,25 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "order/properties-alphabetical-order": null,
+    "max-nesting-depth": [
+      3,
+      {
+        "ignoreAtRules": [
+          "each",
+          "media",
+          "supports",
+          "include"
+        ]
+      }
+    ],
+    "number-leading-zero": "never",
+    "selector-class-pattern": [
+      "^[a-z0-9\\-_]+$",
+      {
+        "message": "Selector should be written in lowercase with hyphens and underscore (selector-class-pattern)"
+      }
+    ],
+    "order/order": null
+  }
+}
